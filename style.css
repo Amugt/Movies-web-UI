@@ -18,26 +18,26 @@ body{
     display: flex;
     flex-wrap: nowrap;
 }
-.side-bar{
-    width: 18%;
-    
-    border-right: 1px solid white;
 
-}
 .sidebar-container{
+    border-right: 1px solid white;
+    width: 15%;
     margin-top: 20px;
+    height: 100%;
    
     display: flex;
     flex-direction: column;
-   
-    align-items: center;
-    align-content:space-between;
+    
+   gap:10px;
+   align-items: center;
+    align-content:space-around;
 }
 .logo{
     font-weight: bold;
     color:var(--secondary-color);
     margin-bottom: 20px;
     height:30px;
+   
 }
 .logo span{
  color: #C13031;
@@ -50,31 +50,95 @@ body{
 }
 .new-feed div{
     height:35px;
-}
-.browse{
-    color:var(--secondary-color)
-}
-.following{
-    color: var(--primary-color);
-    font-size: 15px;
-    align-items: flex-start;
+    display: flex;
+    justify-content: start;
+    font-size: 13px;
+    font-weight: 900;
+    gap:10px;
 }
 
-.following p{
-    font-size: 13px;
+.new-feed i{
+   
+    font-size: 18px;
+    
 }
-hr{
-    width:60%;
-  
+
+.new-feed .active{
+    color:var(--secondary-color)
+}
+.new-feed .active i{
+    color: var(--active-color);
+
+}
+
+.following{
     color: var(--primary-color);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:10px;
+    font-size: small;
+    
 }
+.followers{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+.follower-photo img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.followers .online{
+    color: green;
+
+    float: right;
+}
+.load-more{
+    display: flex;
+    gap: 10px;
+    font-size: 13;
+}
+.loadmoreicon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: var(--active-color);
+    color: var(--secondary-color);
+
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .logout{
-    position: absolute;
-    bottom:0px;
+    display: flex;
+    gap:10px;
+    font-size: 15px;
+    
+    align-self:center
 }
+
+.logout i{
+    color:var(--secondary-color);
+    font-size: 24px;
+}
+
+
+
 .main{
     width: 82%;
-   margin-top: 25px;
+   margin-top: 20px;
 }
 
 .navbar{
@@ -88,12 +152,95 @@ hr{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
-    gap: 1;
+    gap: 5px;
+    color: var(--secondary-color);
  
 }
-.toggler{
-   
+.toggler i{
+   font-size: 20px;
 }
 .search{
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    border:1px solid gray;
+    border-radius: 22px;
+    width: 270px;
+}
+.search i{
+    font-size: 20px;
+}
+
+.search-field{
+    background-color: var(--mainbackgound-color);
+    height: 20px;
+    width: 150px;
+    border:none;
+    color: var(--primary-color);
+    font-size: 15px;
+
+}
+
+.nav-tools i{
+    font-size: 25px;
+}
+
+.profile-pic{
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.hero{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.hero-poster{
+    width: 85%;
+    height: 330px;
+    background: url(./images/wakanda.jpeg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.movie-details{
+    padding-left: 20px;
+    color: var(--secondary-color);
+    float: left;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.movie-details h1{
+    text-transform: uppercase;
+    font-size: 37px;
+}
+.rating{
+    margin-bottom: 20px;
+    display: flex;
+    gap:20px;
+}
+
+.watch-btn{
+    width: 110px;
+    height: 50px;
+    color: var(--secondary-color);
+    border-radius: 15px;
+    background-color: var(--active-color);
+    font-weight: bold;
+    border: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
