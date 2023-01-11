@@ -20,7 +20,7 @@ body{
 }
 
 .sidebar-container{
-    border-right: 1px solid white;
+    border-right: 0.2px solid gray;
     width: 15%;
     margin-top: 20px;
     height: 100%;
@@ -78,7 +78,7 @@ body{
     flex-direction: column;
     gap:10px;
     font-size: small;
-    
+  
 }
 .followers{
     display: flex;
@@ -86,8 +86,8 @@ body{
     gap:5px;
 }
 .follower-photo img{
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -102,15 +102,16 @@ body{
 .load-more{
     display: flex;
     gap: 10px;
-    font-size: 13;
+    font-size: 16;
+    align-items: center;
 }
 .loadmoreicon{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
     background-color: var(--active-color);
     color: var(--secondary-color);
 
@@ -122,11 +123,13 @@ body{
 }
 
 .logout{
+    position: fixed;
+    bottom: 0;
     display: flex;
     gap:10px;
     font-size: 15px;
     
-    align-self:center
+    align-self:center;
 }
 
 .logout i{
@@ -201,9 +204,9 @@ body{
     justify-content: center;
 }
 .hero-poster{
-    width: 85%;
+    width: 80%;
     height: 330px;
-    background: url(./images/wakanda.jpeg);
+    background: url(./images/photo_2023-01-11_22-43-17.jpg);
      background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -213,11 +216,12 @@ body{
     -o-border-radius: 20px;
 }
 .movie-details{
-    padding-left: 20px;
+    padding-left: 30px;
     color: var(--secondary-color);
     float: left;
     max-width: 40%;
     display: flex;
+    gap:10px;
     flex-direction: column;
     align-content: space-between;
 }
@@ -229,6 +233,12 @@ body{
     margin-bottom: 20px;
     display: flex;
     gap:20px;
+}
+
+.watch{
+    display: flex;
+    justify-content:space-evenly;
+    
 }
 
 .watch-btn{
@@ -243,4 +253,102 @@ body{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+
+.party-container{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.parties-title{
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.Parties{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+
+}
+
+.party-cards{
+ 
+    width: 212px;
+    height: 110px;
+    background-color:#0d0d0e;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.card-top{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+}
+
+.card-top .poster img{
+ height: 30px;
+ width: 45px;
+ border-radius: 7px;
+ -webkit-border-radius: 7px;
+ -moz-border-radius: 7px;
+ -ms-border-radius: 7px;
+ -o-border-radius: 7px;
+}
+.party-cards .movie-info{
+    padding: 10px 10px 0 10px;
+}
+.movie-info .Title{
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+.movie-info .Genre{
+    color:var(--primary-color);
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+
+.Watching{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  
+
+}
+
+.movie-cards{
+    width: 200px;
+    height: 270px;
+    background-color:#0d0d0e;
+ 
+ 
+}
+
+.movie-cards img{
+    width:100%;
+    border-radius: 12px;
+    width: 100%;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
 }
