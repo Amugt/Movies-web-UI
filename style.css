@@ -186,6 +186,9 @@ body{
 
 }
 
+.search-field:focus{
+  outline: none;
+}
 
 .nav-tools i{
     font-size: 25px;
